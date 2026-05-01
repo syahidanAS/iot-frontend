@@ -341,7 +341,7 @@ const initMqtt = () => {
         `device/${device.value.device_name}`
 
     client = mqtt.connect(
-        'ws://192.168.88.14:8083',
+         config.public.mqttHost as string,
         {
             username: device.value.device_name,
             password: device.value.key,
