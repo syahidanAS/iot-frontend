@@ -7,6 +7,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       apiBase: process.env.NUXT_PUBLIC_API_BASE || 'http://localhost:3000/api',
+      mqttHost: process.env.NUX_PUBLIC_MQTT_HOST || 'wss://mqtt.unilog.my.id/mqtt',
     },
   },
 })

@@ -341,7 +341,7 @@ const initMqtt = () => {
         `device/${device.value.device_name}`
 
     client = mqtt.connect(
-        'wss://mqtt.unilog.my.id/mqtt',
+        'ws://192.168.88.14:8083/mqtt',
         {
             username: device.value.device_name,
             password: device.value.key,
